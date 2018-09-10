@@ -5,15 +5,42 @@
 <head>
     <title>My Webpage!</title>
     <link rel="stylesheet" href="CS50.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="nav">
-        
-    </div>
+    <header>
+        <div id="nav">
+            <i class="navicon" class="fa fa-dashboard" href="communicationmanager.html"></i>
+            <a class="navtext" href="communicationmanager.html" >Communication Manager</a>
+        </div>
+    </header>
+<div>
+    <input type="text" name="name" placeholder="Name">
+    <input type="password" name="password" placeholder="Password">
+    <input type="number" name="name" placeholder="Age">
+</div>
+<div>
+    Favorite Color?
+    <input type="radio" name="color" value="red"> Red
+    <input type="radio" name="color" value="green"> Green
+    <input type="radio" name="color" value="blue"> Blue
+    <input type="radio" name="color" value="other"> Other
+</div>
+<div>
+    <input name="country" list="countries" placeholder="Country">
+    <datalist id="countries">
+        <option value="USA">
+        <option value="India">
+        <option value="England">
+    </datalist>
+</div>
+
+
     <div id="top">
         <form>
          <input type="text" placeholder="Full Name" name="name">
+         <input type="password" placeholder="Password" name="password">
          <button>Submit!</button>
         </form>
         this is the <span class="name">top</span> of my web page
