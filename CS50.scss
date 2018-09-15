@@ -1,4 +1,34 @@
 $color: red;
+$h1-white-color: white;
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+%header {
+    color: yellow;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: beige;
+}
+
 body {
     padding-top: 80px;
 }
@@ -23,4 +53,21 @@ ol {
 nav {
     margin: 2px;
     padding: 2px;
+}
+.h1-white {
+    color: $h1-white-color;
+}
+
+@media (min-width: 500px) {
+    .h1-responsive {
+        color: $h1-white-color
+    }
+}
+ol {
+    li {
+        color: white
+    }
+}
+h1, h2, h3 {
+    @extend %header;
 }
